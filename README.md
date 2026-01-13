@@ -1,18 +1,49 @@
-# Weather Scraper Project
+# Web Scraper - Quotes
 
-This is a simple Python script to scrape weather data using the OpenWeatherMap API.
+A simple Python web scraper that extracts quotes and their authors from [quotes.toscrape.com](http://quotes.toscrape.com).
 
 ## Features
-- Fetches current weather conditions for a specified city.
-- Displays temperature, pressure, humidity, and weather description.
+
+- Scrapes quotes and author names from a popular quotes website
+- Saves extracted data to a text file (`quotes.txt`)
+- Uses `BeautifulSoup` for HTML parsing
 
 ## Requirements
+
 - Python 3.x
 - `requests` library
+- `beautifulsoup4` library
+
+## Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/danishsyed-dev/web-scraper-quotes.git
+   cd web-scraper-quotes
+   ```
+
+2. Install dependencies:
+   ```sh
+   pip install requests beautifulsoup4
+   ```
 
 ## Usage
-1. Sign up for an API key at [OpenWeatherMap](https://openweathermap.org/).
-2. Replace `your_api_key` in the script with your API key.
-3. Run the script:
-   ```sh
-   python weather_scraper.py
+
+Run the script:
+```sh
+python quotes.py
+```
+
+The scraped quotes will be saved to `quotes.txt` in the same directory.
+
+## Output Example
+
+```
+"The world as we have created it is a process of our thinking..." - Albert Einstein
+"It is our choices, Harry, that show what we truly are..." - J.K. Rowling
+...
+```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
